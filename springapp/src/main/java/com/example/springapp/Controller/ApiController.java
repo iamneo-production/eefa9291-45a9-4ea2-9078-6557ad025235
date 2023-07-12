@@ -21,18 +21,21 @@ public class ApiController {
 @PostMapping("/")
 public boolean addEmployee(@RequestBody Employee employee)
 {
+    System.out.println("helloworld");
    return employeeService.addEmployee(employee);
 }
 
 @GetMapping("/")
 public List <Employee> getAllEmployees()
 {
+    System.out.println("helloworld");
     return employeeService.getAllEmployees();
 }
 
 @GetMapping("/{id}")
 public Employee getEmployeeById(@PathVariable int id)
 {
+    System.out.println("helloworld");
     return employeeService.getEmployeeById(id);
 }
     
